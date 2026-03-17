@@ -1,5 +1,37 @@
-Movie-Listing-and-Rating-Website
-The task is to design and develop a responsive website UI that lists movies with essential details such
-as title, genre, release year, and a rating system. Users should be able to view the list of movies, see
-details, and rate them. This project will focus on UI/UX design, interactivity, and the ability to handle
-movie data efficiently. 
+📌 Project Overview
+
+The Movie Listing and Rating Website is a responsive web application that allows users to browse movies, search by title, view detailed information, watch trailers, and rate movies using a star-based rating system. It provides an interactive and user-friendly interface with modern UI design.
+
+⚙️ Instructions to Run the Project
+
+Clone the repository:
+
+git clone https://github.com/rupesh153/Movie-Listing-and-Rating-Website.git
+
+Navigate to the project folder:
+
+cd Movie-Listing-and-Rating-Website
+
+Open the project:
+
+Open index.html in any browser
+OR
+
+Use Live Server (recommended in VS Code)
+
+(If API is used)
+
+Add your API key in script.js
+
+🛠 Technologies Used
+
+HTML – Structure of the website
+
+CSS – Styling and responsive design
+
+JavaScript – Functionality and interactivity
+
+Movie API (TMDb) – Fetch movie data
+
+YouTube API – Display movie trailers
+
