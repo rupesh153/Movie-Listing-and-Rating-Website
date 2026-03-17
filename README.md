@@ -15,13 +15,7 @@ cd Movie-Listing-and-Rating-Website
 Open the project:
 
 Open index.html in any browser
-OR
 
-Use Live Server (recommended in VS Code)
-
-(If API is used)
-
-Add your API key in script.js
 
 🛠 Technologies Used
 
