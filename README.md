@@ -8,9 +8,9 @@ Clone the repository:
 
 git clone https://github.com/rupesh153/Movie-Listing-and-Rating-Website.git
 
-Navigate to the project folder:cd Movie-Listing-and-Rating-Website
+Navigate to the project folder: cd Movie-Listing-and-Rating-Website
 
-Open the project:Open index.html in any browser
+Open the project: Open index.html in any browser
 
 
 🛠 Technologies Used
