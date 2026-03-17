@@ -8,13 +8,9 @@ Clone the repository:
 
 git clone https://github.com/rupesh153/Movie-Listing-and-Rating-Website.git
 
-Navigate to the project folder:
+Navigate to the project folder:cd Movie-Listing-and-Rating-Website
 
-cd Movie-Listing-and-Rating-Website
-
-Open the project:
-
-Open index.html in any browser
+Open the project:Open index.html in any browser
 
 
 🛠 Technologies Used
@@ -27,5 +23,5 @@ JavaScript – Functionality and interactivity
 
 Movie API (TMDb) – Fetch movie data
 
-YouTube API – Display movie trailers
+
 
