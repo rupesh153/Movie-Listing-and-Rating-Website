@@ -97,7 +97,7 @@ padding:15px;
 /* Mobile */
 @media (max-width: 480px){
 .movie-container{
-grid-template-columns:repeat(3,1fr); /* always 2 cards */
+grid-template-columns:repeat(2,1fr); /* always 2 cards */
 gap:12px;
 padding:10px;
 }
