@@ -39,7 +39,7 @@ movies.forEach(movie=>{
 const card=document.createElement("div");
 card.classList.add("movie-card");
 
-card.innerHTML=`
+card.innerHTML = `
 
 <img src="${IMG_URL + movie.poster_path}" alt="${movie.title}">
 
@@ -59,18 +59,16 @@ card.innerHTML=`
 <span data-value="5">☆</span>
 </div>
 
-
+<button class="trailer-btn" onclick="openTrailer(${movie.id})">
+▶ Watch Trailer
+</button>
 
 <div class="description">${movie.overview}</div>
 
 </div>
 
-<div class="hover-details">
-<p>${movie.overview}</p>
-</div>
 
 `;
-
 moviesContainer.appendChild(card);
 
 updateAverage(movie.id);
@@ -144,5 +142,31 @@ let avg=ratings[movieId].reduce((a,b)=>a+b,0)/ratings[movieId].length;
 document.getElementById(`avg-${movieId}`).innerText=avg.toFixed(1);
 
 }
+async function openTrailer(movieId){
 
+const res = await fetch(
+`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${API_KEY}`
+);
+
+const data = await res.json();
+
+const trailer = data.results.find(
+vid => vid.type === "Trailer" && vid.site === "YouTube"
+);
+
+if(trailer){
+const iframe = document.getElementById("trailerFrame");
+iframe.src = `https://www.youtube.com/embed/${trailer.key}`;
+
+document.getElementById("trailerModal").style.display = "flex";
+}else{
+alert("Trailer not available");
+}
+
+}
+
+function closeTrailer(){
+document.getElementById("trailerModal").style.display = "none";
+document.getElementById("trailerFrame").src = "";
+}
 fetchMovies();
